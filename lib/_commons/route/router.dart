@@ -1,5 +1,6 @@
 import 'package:clean_architecture_app/_commons/route/route_path.dart';
-import 'package:clean_architecture_app/presentation/pages/demo_page.dart';
+import 'package:clean_architecture_app/presentation/pages/user_list_page.dart';
+import 'package:clean_architecture_app/presentation/pages/user_post_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -12,17 +13,16 @@ GoRouter router(RouterRef ref) {
   return GoRouter(
       routes: [
         GoRoute(
-          path: RoutePath.demo.path,
-          name: RoutePath.demo.name,
-          builder: (context, state) => const DemoPage(),
-          // routes: [
-          //   GoRoute(
-          //     path: RoutePath.next.path,
-          //     name: RoutePath.next.name,
-          //     builder: (context, state) => const NextPage(),
-          //   ),]
-        ),
-        // 次のルート
+            path: RoutePath.get.path,
+            name: RoutePath.get.name,
+            builder: (context, state) => const UserListPage(),
+            routes: [
+              GoRoute(
+                path: RoutePath.post.path,
+                name: RoutePath.post.name,
+                builder: (context, state) => const UserPostPage(),
+              ),
+            ]),
       ],
       // 404ページを指定
       errorPageBuilder: (context, state) {

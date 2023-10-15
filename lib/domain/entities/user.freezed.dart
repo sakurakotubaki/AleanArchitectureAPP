@@ -23,7 +23,7 @@ mixin _$User {
   int get id => throw _privateConstructorUsedError;
   String get firstName => throw _privateConstructorUsedError;
   String get lastName => throw _privateConstructorUsedError;
-  int get number => throw _privateConstructorUsedError;
+  int get age => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -35,7 +35,7 @@ abstract class $UserCopyWith<$Res> {
   factory $UserCopyWith(User value, $Res Function(User) then) =
       _$UserCopyWithImpl<$Res, User>;
   @useResult
-  $Res call({int id, String firstName, String lastName, int number});
+  $Res call({int id, String firstName, String lastName, int age});
 }
 
 /// @nodoc
@@ -54,7 +54,7 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
     Object? id = null,
     Object? firstName = null,
     Object? lastName = null,
-    Object? number = null,
+    Object? age = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -69,9 +69,9 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      number: null == number
-          ? _value.number
-          : number // ignore: cast_nullable_to_non_nullable
+      age: null == age
+          ? _value.age
+          : age // ignore: cast_nullable_to_non_nullable
               as int,
     ) as $Val);
   }
@@ -84,7 +84,7 @@ abstract class _$$UserImplCopyWith<$Res> implements $UserCopyWith<$Res> {
       __$$UserImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int id, String firstName, String lastName, int number});
+  $Res call({int id, String firstName, String lastName, int age});
 }
 
 /// @nodoc
@@ -100,7 +100,7 @@ class __$$UserImplCopyWithImpl<$Res>
     Object? id = null,
     Object? firstName = null,
     Object? lastName = null,
-    Object? number = null,
+    Object? age = null,
   }) {
     return _then(_$UserImpl(
       id: null == id
@@ -115,9 +115,9 @@ class __$$UserImplCopyWithImpl<$Res>
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      number: null == number
-          ? _value.number
-          : number // ignore: cast_nullable_to_non_nullable
+      age: null == age
+          ? _value.age
+          : age // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
@@ -127,7 +127,7 @@ class __$$UserImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$UserImpl with DiagnosticableTreeMixin implements _User {
   const _$UserImpl(
-      {this.id = 0, this.firstName = '', this.lastName = '', this.number = 0});
+      {this.id = 0, this.firstName = '', this.lastName = '', this.age = 0});
 
   factory _$UserImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserImplFromJson(json);
@@ -143,11 +143,11 @@ class _$UserImpl with DiagnosticableTreeMixin implements _User {
   final String lastName;
   @override
   @JsonKey()
-  final int number;
+  final int age;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'User(id: $id, firstName: $firstName, lastName: $lastName, number: $number)';
+    return 'User(id: $id, firstName: $firstName, lastName: $lastName, age: $age)';
   }
 
   @override
@@ -158,7 +158,7 @@ class _$UserImpl with DiagnosticableTreeMixin implements _User {
       ..add(DiagnosticsProperty('id', id))
       ..add(DiagnosticsProperty('firstName', firstName))
       ..add(DiagnosticsProperty('lastName', lastName))
-      ..add(DiagnosticsProperty('number', number));
+      ..add(DiagnosticsProperty('age', age));
   }
 
   @override
@@ -171,12 +171,12 @@ class _$UserImpl with DiagnosticableTreeMixin implements _User {
                 other.firstName == firstName) &&
             (identical(other.lastName, lastName) ||
                 other.lastName == lastName) &&
-            (identical(other.number, number) || other.number == number));
+            (identical(other.age, age) || other.age == age));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, firstName, lastName, number);
+  int get hashCode => Object.hash(runtimeType, id, firstName, lastName, age);
 
   @JsonKey(ignore: true)
   @override
@@ -197,7 +197,7 @@ abstract class _User implements User {
       {final int id,
       final String firstName,
       final String lastName,
-      final int number}) = _$UserImpl;
+      final int age}) = _$UserImpl;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$UserImpl.fromJson;
 
@@ -208,7 +208,7 @@ abstract class _User implements User {
   @override
   String get lastName;
   @override
-  int get number;
+  int get age;
   @override
   @JsonKey(ignore: true)
   _$$UserImplCopyWith<_$UserImpl> get copyWith =>
