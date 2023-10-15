@@ -10,7 +10,7 @@ class User with _$User {
     @Default(0) int id,
     @Default('') String firstName,
     @Default('') String lastName,
-    @Default(0) int number,
+    @Default(0) int age,
   }) = _User;
 
   factory User.fromJson(Map<String, dynamic> json) =>
