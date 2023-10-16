@@ -1,4 +1,4 @@
-import 'package:clean_architecture_app/_commons/route/router.dart';
+import 'package:clean_architecture_app/commons/route/router.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

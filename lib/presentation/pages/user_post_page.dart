@@ -1,4 +1,4 @@
-import 'package:clean_architecture_app/_commons/theme.dart';
+import 'package:clean_architecture_app/commons/theme.dart';
 import 'package:clean_architecture_app/domain/entities/user.dart';
 import 'package:clean_architecture_app/domain/provider/user_future_provider.dart';
 import 'package:clean_architecture_app/domain/usecase/user_async_notifier.dart';

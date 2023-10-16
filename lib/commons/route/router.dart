@@ -1,4 +1,4 @@
-import 'package:clean_architecture_app/_commons/route/route_path.dart';
+import 'package:clean_architecture_app/commons/route/route_path.dart';
 import 'package:clean_architecture_app/presentation/pages/user_list_page.dart';
 import 'package:clean_architecture_app/presentation/pages/user_post_page.dart';
 import 'package:flutter/material.dart';
