@@ -1,5 +1,5 @@
-import 'package:clean_architecture_app/_commons/route/route_path.dart';
-import 'package:clean_architecture_app/_commons/theme.dart';
+import 'package:clean_architecture_app/commons/route/route_path.dart';
+import 'package:clean_architecture_app/commons/theme.dart';
 import 'package:clean_architecture_app/domain/provider/user_future_provider.dart';
 import 'package:clean_architecture_app/presentation/widgets/appbar_component.dart';
 import 'package:flutter/material.dart';

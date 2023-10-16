@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:clean_architecture_app/_commons/theme.dart';
+import 'package:clean_architecture_app/commons/theme.dart';
 import 'package:clean_architecture_app/presentation/widgets/appbar_component.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
